@@ -283,6 +283,11 @@
             document.getElementById('difyModal').style.display = 'block';
         });
 
+        document.querySelector('a[href="/ollama"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('ollamaModal').style.display = 'block';
+        });
+
         document.querySelector('a[href="/vits"]').addEventListener('click', function(e) {
             e.preventDefault();
             window.open('http://archlinux:23456', '_blank');
